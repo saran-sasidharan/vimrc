@@ -16,4 +16,3 @@ set path+=**
 " Display matching files while tab complete
 set wildmenu
 
-

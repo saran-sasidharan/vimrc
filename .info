@@ -2,3 +2,12 @@ To source the current file in VIM
 :source ~/.vim/.vimrc
 
 Install exuberant ctags for tagging purpose
+ctags -R .
+run the above command in terminal from the root folder of project and it will create a tag file
+And this tag file is read by vim for tagging
+Ctrl-] 
+on tag name in vim
+g Ctrl-] 
+list all tag names in vim
+Ctrl-t 
+jump several times over tags deep into source
