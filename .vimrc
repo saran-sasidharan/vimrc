@@ -3,6 +3,7 @@ set nocompatible
 
 " Enable syntax 
 syntax enable
+let python_highlight_all=1
 
 " Enable plugins (for netrw)
 filetype plugin on
@@ -28,3 +29,19 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 "SNIPPETS
 "nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a
+
+"Python PEP8
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set textwidth=79
+set expandtab
+set autoindent
+set fileformat=unix
+
+" UTF8
+set encoding=utf-8
+
+" Line numbering and relative numbering
+set number
+set relativenumber
