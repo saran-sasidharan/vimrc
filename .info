@@ -1,0 +1,4 @@
+To source the current file in VIM
+:source ~/.vim/.vimrc
+
+Install exuberant ctags for tagging purpose
