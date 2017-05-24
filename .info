@@ -11,3 +11,15 @@ g Ctrl-]
 list all tag names in vim
 Ctrl-t 
 jump several times over tags deep into source
+
+Autocomplete 
+No specific command is required
+Ctrl-n 
+Ctrl-p
+next and previous
+Ctrl-x Ctrl-n
+From the current file only
+Ctrl-x Ctrl-f
+Search for file names
+Ctrl-x Ctrl-]
+Tab only completion
