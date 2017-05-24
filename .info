@@ -23,3 +23,7 @@ Ctrl-x Ctrl-f
 Search for file names
 Ctrl-x Ctrl-]
 Tab only completion
+
+File Browsing
+:edit
+
