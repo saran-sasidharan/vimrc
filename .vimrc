@@ -45,3 +45,21 @@ set encoding=utf-8
 " Line numbering and relative numbering
 set number
 set relativenumber
+
+" MAKE FILE PYTHON
+au FileType python set makeprg=python\ %
+
+" DISABLING
+" Arrow keys, PageUp and Down
+map <up> <nop> 
+map <down> <nop> 
+map <right> <nop> 
+map <left> <nop> 
+imap <up> <nop> 
+imap <down> <nop> 
+imap <right> <nop> 
+imap <left> <nop> 
+map <pageup> <nop>
+map <pagedown> <nop>
+imap <pageup> <nop>
+imap <pagedown> <nop>
