@@ -35,8 +35,8 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 "nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a
 
 "Python PEP8
-autocmd BufNewFile,BufRead *.py call setPyOptions()
-function setPyOptions()
+autocmd BufNewFile,BufRead *.py call SetPyOptions()
+function SetPyOptions()
   set tabstop=2
   set softtabstop=2
   set shiftwidth=2
