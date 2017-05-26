@@ -1,12 +1,16 @@
 " Disable VI commands - not sure, something related to VI
 set nocompatible
 
+" Enable plugins (for netrw)
+filetype plugin on
+
+" ENABLE FOLDING
+set foldmethod=indent
+set foldlevel=99
+
 " Enable syntax 
 syntax enable
 let python_highlight_all=1
-
-" Enable plugins (for netrw)
-filetype plugin on
 
 " FINDING FILES:
 
@@ -31,13 +35,16 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 "nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a
 
 "Python PEP8
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set textwidth=79
-set expandtab
-set autoindent
-set fileformat=unix
+autocmd BufNewFile,BufRead *.py call setPyOptions()
+function setPyOptions()
+  set tabstop=2
+  set softtabstop=2
+  set shiftwidth=2
+  set textwidth=80
+  set expandtab
+  set autoindent
+  set fileformat=unix
+endfunction 
 
 " UTF8
 set encoding=utf-8
@@ -51,15 +58,16 @@ au FileType python set makeprg=python\ %
 
 " DISABLING
 " Arrow keys, PageUp and Down
-map <up> <nop> 
-map <down> <nop> 
-map <right> <nop> 
-map <left> <nop> 
-imap <up> <nop> 
-imap <down> <nop> 
-imap <right> <nop> 
-imap <left> <nop> 
-map <pageup> <nop>
-map <pagedown> <nop>
-imap <pageup> <nop>
-imap <pagedown> <nop>
+noremap <up> <nop> 
+noremap <down> <nop> 
+noremap <right> <nop> 
+noremap <left> <nop> 
+inoremap <up> <nop> 
+inoremap <down> <nop> 
+inoremap <right> <nop> 
+inoremap <left> <nop> 
+noremap <pageup> <nop>
+noremap <pagedown> <nop>
+inoremap <pageup> <nop>
+inoremap <pagedown> <nop>
+
