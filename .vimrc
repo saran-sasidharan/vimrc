@@ -73,3 +73,4 @@ inoremap <pagedown> <nop>
 
 " Highlight search
 set hlsearch
+set incsearch
