@@ -72,4 +72,4 @@ inoremap <pageup> <nop>
 inoremap <pagedown> <nop>
 
 " Highlight search
-:set hlsearch
+set hlsearch
